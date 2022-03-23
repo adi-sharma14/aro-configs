@@ -18,7 +18,7 @@ This space is used to demonstate the ArgoCD capabilities to maintain ARO cluster
 
 # 2. Synchronization of cluster configuration, self-heal and prune
 
-Refer the link here for ArgoCD application manifests [code](https://github.com/adi-sharma14/aro-configs/tree/main/argo)
+Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/argo) for ArgoCD application manifests 
 
 ### Pre-Requisites:
     1. Openshift cluster is up and running
