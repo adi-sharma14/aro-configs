@@ -1,6 +1,6 @@
 # aro-configs
 
-This space is used to demonstate the ArgoCD capabilities to maintain ARO cluster configurations. In order to demonstrate it successfully, below tasks are required.
+This space is used to demonstate the ArgoCD capabilities to maintain ARO cluster configurations as well as application configurations. In order to demonstrate it successfully, below tasks are required.
 
 # 1. Deployment of ArgoCD Operator in ARO cluster
 
@@ -17,7 +17,7 @@ This space is used to demonstate the ArgoCD capabilities to maintain ARO cluster
 
 # 2. Synchronization of cluster configuration, self-heal and prune
 
-Refer the link here for ArgoCD application manifests [code](https://github.com/adi-sharma14/aro-configs/argo)
+Refer the link here for ArgoCD application manifests [code](https://github.com/adi-sharma14/aro-configs/tree/main/argo)
 
 ### Pre-Requisites:
     1. Openshift cluster is up and running
@@ -29,13 +29,14 @@ Refer the link here for ArgoCD application manifests [code](https://github.com/a
 * Deploy the argoCD applications to synch cluster configuration
     ```
     oc apply -f cluster-configs.yml
-    oc apply -f s2iapp-configs.yml
-    oc apply -f springapp-configs.yml
     ```
 
 # 3. Deployment of application using S2I
 
-Refer the link here for ArgoCD application manifests [code](https://github.com/adi-sharma14/aro-configs/s2iapp)
+S2I is one of the build strategy to build the images using the source code only. Dockerfiles are not required.
+
+Refer the link [HERE](https://github.com/adi-sharma14/demo-app.git)for sample web application source code
+Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/s2iapp) - these manifests are used for app deployment on ARO cluster using S2I build strategy.
 
 ### Pre-Requisites:
     1. Openshift cluster is up and running
@@ -45,14 +46,14 @@ Refer the link here for ArgoCD application manifests [code](https://github.com/a
 
 ### Steps
 
-* Deploy the argoCD applications to showcase S2I capability
+* Deploy the argoCD applications to deploy the webapp using **S2I build strategy**
     ```
     oc apply -f s2iapp-configs.yml
     ```
 
 # 4. Deployment of application using Docker strategy
 
-Refer the link here for ArgoCD application manifests [code](https://github.com/adi-sharma14/aro-configs/app)
+Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/app) - these manifests are used for app deployment on ARO cluster using docker build strategy.
 
 ### Pre-Requisites:
     1. Openshift cluster is up and running
@@ -62,7 +63,7 @@ Refer the link here for ArgoCD application manifests [code](https://github.com/a
 
 ### Steps
 
-* Deploy the argoCD applications to synch cluster configuration
+* Deploy the argoCD application to deploy the webapp using **docker build strategy**
     ```
     oc apply -f springapp-configs.yml
     ```
