@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: s2iapp
+  labels:
+    app: s2iapp
+spec:
+  selector:
+    app: s2iapp
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP

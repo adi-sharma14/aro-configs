@@ -1,0 +1,7 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  labels:
+    app: s2iapp
+  name: s2iapp
+  namespace: s2iapp

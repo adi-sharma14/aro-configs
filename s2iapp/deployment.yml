@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: s2iapp
+  labels:
+    app: s2iapp
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: s2iapp
+  template:
+    metadata:
+      labels:
+        app: s2iapp
+    spec:
+      containers:
+      - name: s2iapp
+        image: image-registry.openshift-image-registry.svc:5000/s2iapp/s2iapp:latest
+        ports:
+        - containerPort: 8080
+          protocol: TCP

@@ -1,0 +1,14 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: s2iapp
+  labels:
+    app: s2iapp
+spec:
+  to:
+    kind: Service
+    name: s2iapp
+    weight: 100
+  port:
+    targetPort: 8080
+    

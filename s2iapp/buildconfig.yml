@@ -1,0 +1,27 @@
+apiVersion: build.openshift.io/v1
+kind: BuildConfig
+metadata:
+  name: s2iapp
+  namespace: s2iapp
+spec:
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 's2iapp:latest'
+      namespace: s2iapp
+  source:
+    git:
+      ref: main
+      uri: 'https://github.com/adi-sharma14/demo-app.git'
+    type: Git
+  strategy:
+    type: Source
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        name: 'python:latest'
+        namespace: openshift
+  triggers:
+    - type: ImageChange
+      imageChange: {} 
+    - type: ConfigChange
