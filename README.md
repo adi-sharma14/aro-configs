@@ -35,14 +35,9 @@ Refer the link here for ArgoCD application manifests [code](https://github.com/a
 
 S2I is one of the build strategy to build the images using the source code only. Dockerfiles are not required.
 
-Refer the link [HERE](https://github.com/adi-sharma14/demo-app.git)for sample web application source code
-Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/s2iapp) - these manifests are used for app deployment on ARO cluster using S2I build strategy.
+* Refer the link [HERE](https://github.com/adi-sharma14/demo-app.git)for sample web application source code.
 
-### Pre-Requisites:
-    1. Openshift cluster is up and running
-    2. Operator `Red Hat OpenShift GitOps` is successfuly installed
-    3. ArgoCD UI is up and running
-    4. `cluster-configs` app is healthy in argoCD
+* Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/s2iapp) - these manifests are used for app deployment on ARO cluster using S2I build strategy.
 
 ### Steps
 
@@ -54,12 +49,6 @@ Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/s2ia
 # 4. Deployment of application using Docker strategy
 
 Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/app) - these manifests are used for app deployment on ARO cluster using docker build strategy.
-
-### Pre-Requisites:
-    1. Openshift cluster is up and running
-    2. Operator `Red Hat OpenShift GitOps` is successfuly installed
-    3. ArgoCD UI is up and running
-    4. `cluster-configs` app is healthy in argoCD
 
 ### Steps
 
