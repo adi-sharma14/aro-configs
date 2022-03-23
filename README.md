@@ -35,7 +35,7 @@ Refer the link here for ArgoCD application manifests [code](https://github.com/a
 
 S2I is one of the build strategy to build the images using the source code only. Dockerfiles are not required.
 
-* Refer the link [HERE](https://github.com/adi-sharma14/demo-app.git)for sample web application source code.
+* Refer the link [HERE](https://github.com/adi-sharma14/demo-app.git) for sample web application source code.
 
 * Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/s2iapp) - these manifests are used for app deployment on ARO cluster using S2I build strategy.
 
