@@ -16,7 +16,7 @@ This space is used to demonstate the ArgoCD capabilities to maintain ARO cluster
     oc adm policy add-cluster-role-to-user cluster-admin system:serviceaccount:openshift-gitops:openshift-gitops-argocd-application-controller -n openshift-gitops
     ```
 
-# 2. Synchronization of cluster configuration, self-heal and prune
+# 2. Synchronization of cluster configuration
 
 Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/argo) for ArgoCD application manifests 
 
@@ -34,7 +34,7 @@ Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/argo
     oc apply -f cluster-configs.yml
     ```
 
-# 3. Deployment of application using S2I
+# 3. Deployment of application using S2I and demo self-heal
 
 S2I is one of the build strategy to build the images using the source code only. Dockerfiles are not required.
 

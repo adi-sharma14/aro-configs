@@ -4,10 +4,6 @@ metadata:
   name: cluster-configs
   namespace: openshift-gitops
 spec:
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
   destination:
     namespace: default
     server: https://kubernetes.default.svc
@@ -18,3 +14,7 @@ spec:
     path: cluster
     repoURL: https://github.com/adi-sharma14/aro-configs
     targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
