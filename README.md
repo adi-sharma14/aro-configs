@@ -24,11 +24,13 @@ Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/argo
     1. Openshift cluster is up and running
     2. Operator `Red Hat OpenShift GitOps` is successfuly installed
     3. ArgoCD UI is up and running
+    4. GITHUB_TOKEN is set as env variable for the repo
 
 ### Steps
 
 * Deploy the argoCD applications to synch cluster configuration
     ```
+    oc apply -f ../cluster/secret.yml
     oc apply -f cluster-configs.yml
     ```
 

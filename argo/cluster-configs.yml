@@ -17,4 +17,4 @@ spec:
       recurse: true
     path: cluster
     repoURL: https://github.com/adi-sharma14/aro-configs.git
-    targetRevision: HEAD
+    targetRevision: main
