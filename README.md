@@ -34,7 +34,7 @@ Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/argo
     oc apply -f cluster-configs.yml
     ```
 
-# 3. Deployment of application using S2I and
+# 3. Deployment of application using S2I
 
 S2I is one of the build strategy to build the images using the source code only. Dockerfiles are not required.
 
@@ -47,15 +47,4 @@ S2I is one of the build strategy to build the images using the source code only.
 * Deploy the argoCD applications to deploy the webapp using **S2I build strategy**
     ```
     oc apply -f s2iapp-configs.yml
-    ```
-
-# 4. Deployment of application using Docker strategy
-
-Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/app) - these manifests are used for app deployment on ARO cluster using docker build strategy.
-
-### Steps
-
-* Deploy the argoCD application to deploy the webapp using **docker build strategy**
-    ```
-    oc apply -f springapp-configs.yml
     ```
