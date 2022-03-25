@@ -34,7 +34,7 @@ Refer the link [HERE](https://github.com/adi-sharma14/aro-configs/tree/main/argo
     oc apply -f cluster-configs.yml
     ```
 
-# 3. Deployment of application using S2I and demo self-heal
+# 3. Deployment of application using S2I and
 
 S2I is one of the build strategy to build the images using the source code only. Dockerfiles are not required.
 
